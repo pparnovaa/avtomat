@@ -98,28 +98,17 @@ st.write(""" Так как значения частот колебаний ок
 st.write(""" lyambda = """ + str(lyambda))
 plt.plot(x_list,y_list)
 x_list_y_list = plt.figure()
-plt.title("Зависимость ksi для первого тона колебаний от гибкости лопатки ")
-plt.xlabel("lyambda")
-plt.ylabel("ksi")
+
 
 plt.grid()
 st.pyplot(x_list_y_list)
 fig = figure(
-title='simple line example',
+title='Зависимость ksi для первого тона колебаний от гибкости лопатки',
 x_axis_label='x',
 y_axis_label='y')
 
 fig.line(x_list, y_list, legend_label='Trend', line_width=2)
 st.bokeh_chart(fig, use_container_width=True)
-
-plt.xlim([25, 50])
-# !!! Нарисуем одномерный график с использованием стиля
-plt.plot (x_list, y_list)
-# !!! На графике будет показан только участок от -10 до 30 по оси X
-plt.xlim (-10, 30)
-# !!! Покажем окно с нарисованным графиком
-
-plt.show()
 ksi = st.number_input('Введите ksi, ', value=ksi)
 st.session_state.ksi = ksi
 st.write(""" # """)
