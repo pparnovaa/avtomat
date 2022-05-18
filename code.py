@@ -104,6 +104,11 @@ plt.ylabel("ksi")
 plt.grid()
 st.pyplot(x_list_y_list)
 plt.xlim([25, 50])
+# !!! Нарисуем одномерный график с использованием стиля
+plt.plot (x_list, y_list)
+# !!! На графике будет показан только участок от -10 до 30 по оси X
+plt.xlim (-10, 30)
+# !!! Покажем окно с нарисованным графиком
 plt.show()
 ksi = st.number_input('Введите ksi, ', value=ksi)
 st.session_state.ksi = ksi
@@ -148,4 +153,4 @@ st.write(""" fstA1 = """ + str(fstA1))
 
 
 st.write("""# Влияние вращения ротора на собственные частоты колебаний лопаток""")
-st.write("# Вли")
+
