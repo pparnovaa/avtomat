@@ -9,8 +9,6 @@ from iapws import IAPWS97 as WSP
 import math as M
 from PIL import Image
 import streamlit.components.v1 as components
-from sympy import *
-from colorama import *
 
 
 st.write("Выполнили: Парнова Екатерина ФПэ-01-19, Юричковский Кирилл ТФэ-01-19")
