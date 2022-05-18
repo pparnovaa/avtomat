@@ -141,3 +141,8 @@ fstA1=fiA1*f1
 st.write(""" fstA0 = """ + str(fstA0))
 st.write(""" fstB0 = """ + str(fstB0))
 st.write(""" fstA1 = """ + str(fstA1))
+
+
+
+st.write("""# Влияние вращения ротора на собственные частоты колебаний лопаток""")
+st.write("# Вли")
