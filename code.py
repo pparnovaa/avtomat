@@ -118,8 +118,8 @@ Eb=E
 dp= 1.046 #NE UVERENA
 Jb=Bb/12*delta**3
 tb=(M.pi*dp)/z2
-betta=90-bettau
-bettarad=betta*math.pi/180
+betta=90-betau
+bettarad=betta*M.pi/180
 kb=12*(m-1)*Hb*Eb**Jb*M.cos(betta)*M.cos(betta)
 st.write(""" # """)
 st.write(""" Коэффициент жесткости бандажа: """)
