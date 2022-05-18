@@ -97,9 +97,9 @@ y_list= [0.463,0.482,0.514,0.552,0.595,0.639,0.675,0.716,0.764,0,795,0.828,0.862
 st.write(""" Так как значения частот колебаний оказываетсются ниже рассчитанных, используют поправочный коэффициент ksi=fдейств/fрасч для первого тона колебаний  """)
 st.write(""" lyambda = """ + str(lyambda))
 plt.plot(x_list,y_list)
-
 x_list_y_list = plt.figure()
 plt.title("Зависимость ksi для первого тона колебаний от гибкости лопатки ")
+plt.autoscale(enable=True, axis=’both’, tight=None)
 plt.xlabel("lyambda")
 plt.ylabel("ksi")
 plt.grid()
