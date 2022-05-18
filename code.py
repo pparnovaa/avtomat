@@ -104,6 +104,10 @@ y_axis_label='Поправочный коэффициент')
 
 fig.line(x_list, y_list , line_width=3)
 st.bokeh_chart(fig, use_container_width=True)
+itog = pd.DataFrame({
+"Поправочный коэффициент":(lyambda)})
+  itog
+  
 ksi = st.number_input('Введите ksi, ', value=ksi)
 st.session_state.ksi = ksi
 st.write(""" # """)
