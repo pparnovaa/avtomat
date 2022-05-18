@@ -86,5 +86,29 @@ Bb = st.number_input('Введите размер бандажной ленты 
 st.session_state.Bb = Bb
 delta = st.number_input('Введите размер бандажной ленты delta, мм ', value=delta)
 st.session_state.delta = delta
-Hb = st.number_input('Качество присоединение бандажа Hb ', value=Hb)
+Hb = st.number_input('Качество присоединения бандажа Hb ', value=Hb)
 st.session_state.Hb = Hb
+i=(Jx/Fx)**0.5
+lyambda=l2/i
+
+st.write("""# """)
+
+st.write(""" Так как значения частот колебаний оказываетсются ниже рассчитанных, используют поправочный коэффициент ksi=fдейств/fрасч для первого тона колебаний  """)
+st.write(""" lyambda = """ + str(lyambda))
+ksi = st.number_input('Введите ksi, ', value=ksi)
+st.session_state.ksi = ksi
+
+st.write(""" # """)
+st.write(""" Действительная частота колебаний f1: """)
+f1=ksi*(m1/l2**2)*(E*Jx/(ro*Fx))
+st.write(""" f1 = """ + str(f1) + """ Гц """)
+st.write(""" # """)
+st.write(""" Действительная частота колебаний f2: """)
+f2=1*(m2/l2**2)*(E*Jx/(ro*Fx))
+st.write(""" f2 = """ + str(f2) + """ Гц """)
+st.write(""" # """)
+st.write(""" Действительная частота колебаний f3: """)
+f3=1*(m3/l2**2)*(E*Jx/(ro*Fx))
+st.write(""" f3 = """ + str(f3) + """ Гц """)
+st.write(""" # """)
+
