@@ -32,7 +32,7 @@ m1=0.56
 m2=3.51
 m3=9.82
 dp=1.046
-
+n=50
 st.write(" *Изменить исходные данные:* ")
 
 dsr = st.number_input('Введите средний диаметр последней ступени dsr, м', value=dsr)
@@ -59,6 +59,8 @@ Hb = st.number_input('Качество присоединения бандажа
 st.session_state.Hb = Hb
 dp = st.number_input('Введите периферийный диаметр, м', value=dp)
 st.session_state.dp = dp
+n = st.number_input('Введите частоту вращения, с-1', value=n)
+st.session_state.n = n
 i=(Jx/Fx)**0.5
 lyambda=l2/i
 st.write(""" # """)
@@ -134,7 +136,7 @@ bettarad=betta*M.pi/180
 #st.write(""" kb = """ + str(kb))
 nub=(Bb*10**-3*delta*10**-3*tb*ro)/(Fx*l2*ro)
 st.write(""" Относительная масса бандажа """ + str(nub))
-
+# Сделать график!!!!!!!!!!!!! 
 fiA0=1.14
 fiB0=4.76
 fiA1=6.39
@@ -148,4 +150,9 @@ st.write(""" fstA1 = """ + str(fstA1))
 
 
 st.write("""# Влияние вращения ротора на собственные частоты колебаний лопаток""")
+B=0.5*(dsr/l2-1)*(0.5*nub)/0.333333+M.sin(betta)*M.sin(betta)
+st.write(""" B = """ + str(B))
+fdin1=(fst1**2+B*n**2)**0.5
+fdin2=(fst2**2+B*n**2)**0.5
+fdin3=(fst3**2+B*n**2)**0.5
 
