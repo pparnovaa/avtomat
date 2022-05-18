@@ -155,4 +155,6 @@ st.write(""" B = """ + str(B))
 fdin1=(f1**2+B*n**2)**0.5
 fdin2=(f2**2+B*n**2)**0.5
 fdin3=(f3**2+B*n**2)**0.5
-
+st.write(""" fdin1 = """ + str(fdin1))
+st.write(""" fdin2 = """ + str(fdin2))
+st.write(""" fdin3 = """ + str(fdin3))
