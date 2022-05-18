@@ -123,6 +123,6 @@ bettarad=betta*M.pi/180
 #kb=(12*(m-1)*Hb*Eb*Jb*M.cos(betta)*M.cos(betta)*l2)/(m*tb*E*Jx)
 #st.write(""" Коэффициент жесткости бандажа: """)
 #st.write(""" kb = """ + str(kb))
-nub=(Bb*delta*tb*ro)/(Fx*l2*ro)
+nub=(Bb*10**-3*delta*10**-3*tb*ro)/(Fx*l2*ro)
 st.write(""" Относительная масса бандажа """ + str(nub))
 
