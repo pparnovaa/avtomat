@@ -4,7 +4,7 @@ from iapws import IAPWS97
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-
+from bokeh.plotting import figure
 from iapws import IAPWS97 as WSP
 import math as M
 from PIL import Image
