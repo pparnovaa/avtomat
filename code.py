@@ -104,9 +104,14 @@ plt.ylabel("ksi")
 
 plt.grid()
 st.pyplot(x_list_y_list)
-fig = figure(title='SS', plot_height=300, plot_width=300, x_range=(0, 4), y_range=(0, 4))
-fig.line(x_list,y_list)
+fig = figure(
+title='simple line example',
+x_axis_label='x',
+y_axis_label='y')
+
+fig.line(x_list, y_list, legend_label='Trend', line_width=2)
 st.bokeh_chart(fig, use_container_width=True)
+
 plt.xlim([25, 50])
 # !!! Нарисуем одномерный график с использованием стиля
 plt.plot (x_list, y_list)
