@@ -158,3 +158,4 @@ fdin3=(fstA1**2+B*n**2)**0.5
 st.write(""" fdin1 = """ + str(fdin1))
 st.write(""" fdin2 = """ + str(fdin2))
 st.write(""" fdin3 = """ + str(fdin3))
+st.write("""# Вибрационная диаграмма лопаточного аппарата""")
