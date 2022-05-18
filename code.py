@@ -40,7 +40,7 @@ st.write(""" # """)
 st.write(" *Дано:* ")
 st.write(""" Средний диаметр последней ступени: """)
 st.write(""" dsr = """ + str( dsr) + """ м""")
-st.write(""" Длина рабочей лопатка: """)
+st.write(""" Длина рабочей лопатки: """)
 st.write(""" l2 = """ + str(l2) + """ м""")
 st.write(""" Площадь сечения профиля: """)
 st.write(""" Fx = """ + str(Fx) + """ м2 """)
@@ -76,8 +76,6 @@ st.session_state.Jx = Jx
 betau = st.number_input('Введите угол установки betau, гр', value=betau)
 st.session_state.Jx = Jx
 ro = st.number_input('Введите плотность стали ro, гр', value=ro)
-st.session_state.ro = ro
-ro = st.number_input('Введите плотность стали ro, кг/м3', value=ro)
 st.session_state.ro = ro
 E = st.number_input('Введите модуль упругости E, Па ', value=E)
 st.session_state.E = E
