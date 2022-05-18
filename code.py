@@ -113,8 +113,6 @@ plt.title("Зависимость ksi для первого тона колеб�
 plt.xlabel("lyambda")
 plt.ylabel("ksi")
 plt.grid()
-pyplot.xlim([0, 200])
-pyplot.xlim([0, 1])
 st.pyplot(x_list_y_list)
 plt.autoscale()
 plt.show()
