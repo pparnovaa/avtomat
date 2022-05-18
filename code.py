@@ -99,15 +99,15 @@ st.session_state.ksi = ksi
 
 st.write(""" # """)
 st.write(""" Действительная частота колебаний f1: """)
-f1=ksi*(m1/l2**2)*(E*Jx/(ro*Fx))
+f1=ksi*(m1/l2**2)*(E*Jx/(ro*Fx))**0.5
 st.write(""" f1 = """ + str(f1) + """ Гц """)
 st.write(""" # """)
 st.write(""" Действительная частота колебаний f2: """)
-f2=1*(m2/l2**2)*(E*Jx/(ro*Fx))
+f2=1*(m2/l2**2)*(E*Jx/(ro*Fx))**0.5
 st.write(""" f2 = """ + str(f2) + """ Гц """)
 st.write(""" # """)
 st.write(""" Действительная частота колебаний f3: """)
-f3=1*(m3/l2**2)*(E*Jx/(ro*Fx))
+f3=1*(m3/l2**2)*(E*Jx/(ro*Fx))**0.5
 st.write(""" f3 = """ + str(f3) + """ Гц """)
 st.write(""" # """)
 
