@@ -104,12 +104,8 @@ y_axis_label='Поправочный коэффициент')
 
 fig.line(x_list, y_list , line_width=3)
 st.bokeh_chart(fig, use_container_width=True)
-itog = pd.DataFrame({
-"Поправочный коэффициент":(lyambda)})
-  itog
-  
-ksi = st.number_input('Введите ksi, ', value=ksi)
-st.session_state.ksi = ksi
+ksi=5e**-6*lyambda**4-(0.0003*lyambda**3)+0.0037*lyambda**2+0.0203*lyambda+0.4318
+st.write(""" ksi = """ + str(ksi)
 st.write(""" # """)
 st.write("# Определение собственной частоты колебаний пакета лопаток в статических условиях")
 st.write(""" # """)
