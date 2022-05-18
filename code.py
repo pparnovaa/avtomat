@@ -150,7 +150,7 @@ st.write(""" fstA1 = """ + str(fstA1))
 
 
 st.write("""# Влияние вращения ротора на собственные частоты колебаний лопаток""")
-B=0.5*(dsr/l2-1)*(0.5*nub)/0.333333+M.sin(betta*M.pi/180)*M.sin(betta*M.pi/180)
+B=0.5*(dsr/l2-1)*(0.5*nub)/(0.333333*nub)+M.sin(betta*M.pi/180)*M.sin(betta*M.pi/180)
 st.write(""" B = """ + str(B))
 fdin1=(f1**2+B*n**2)**0.5
 fdin2=(f2**2+B*n**2)**0.5
