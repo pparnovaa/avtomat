@@ -14,7 +14,6 @@ import streamlit.components.v1 as components
 st.write("Выполнили: Парнова Екатерина ФПэ-01-19, Юричковский Кирилл ТФэ-01-19")
 
 st.write("# Колебания лопаток")
-st.write(""" # """)
 
 dsr = 0.8355
 Fx=2.44e-4
@@ -32,9 +31,6 @@ Hb=0.226
 m1=0.56
 m2=3.51
 m3=9.82
-st.write("# Решение ")
-    
-st.write("""# """)
 
 st.write(""" # """)
 st.write(" *Дано:* ")
