@@ -120,7 +120,7 @@ Jb=Bb/12*delta**3
 tb=(M.pi*dp)/z2
 betta=90-betau
 bettarad=betta*M.pi/180
-kb=(12*(m-1)*Hb*Eb*Jb*M.cos(betta)*M.cos(betta)*l2)/(m*tb*E*J)
+kb=(12*(m-1)*Hb*Eb*Jb*M.cos(betta)*M.cos(betta)*l2)/(m*tb*E*Jx)
 st.write(""" # """)
 st.write(""" Коэффициент жесткости бандажа: """)
 st.write(""" kb = """ + str(kb))
