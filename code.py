@@ -8,7 +8,6 @@ import pandas as pd
 from iapws import IAPWS97 as WSP
 import math as M
 from PIL import Image
-#from fpdf import FPDF
 import streamlit.components.v1 as components
 from sympy import *
 from colorama import *
@@ -18,9 +17,6 @@ st.write("Выполнили: Парнова Екатерина ФПэ-01-19, Ю
 
 st.write("# Колебания лопаток")
 st.write(""" # """)
-
-
-if page == "Дано":
 
     dsr = 0.8355
     Fx=2.44e-4
@@ -66,14 +62,31 @@ if page == "Дано":
     st.write(""" Hb = """ + str(Hb))
     
 
-    st.write(" *Возможность изменить исходные данные:* ")
+    st.write(" *Изменить исходные данные:* ")
 
-    G = st.number_input('Введите расход пара G, кг/с', value=G)
-    st.session_state.G = G
-    n = st.number_input('Введите частота вращения n, 1/c', value=n)
-    st.session_state.n = n
-    l2 = st.number_input('Введите разм. раб. лоп. l2, м', value=l2)
+    dsr = st.number_input('Введите средний диаметр последней ступени dsr, м', value=dsr)
+    st.session_state.dsr =dsr
+    l2 = st.number_input('Введите длину рабочей лопатка l2, м', value=l2)
     st.session_state.l2 = l2
-
-    tetta = st.number_input('Введите разм. раб. лоп. tettaG, ', value=tetta)
-    st.session_state.tetta = tetta
+    Fx = st.number_input('Введите площадь сечения профиля Fx, м2', value=Fx)
+    st.session_state.Fx = Fx
+    Jx = st.number_input('Введите момент инерции Jx, м4', value=Jx)
+    st.session_state.Jx = Jx
+    betau = st.number_input('Введите угол установки betau, гр', value=betau)
+    st.session_state.Jx = Jx
+    ro = st.number_input('Введите плотность стали ro, гр', value=ro)
+    st.session_state.ro = ro
+    ro = st.number_input('Введите плотность стали ro, кг/м3', value=ro)
+    st.session_state.ro = ro
+    E = st.number_input('Введите модуль упругости E, Па ', value=E)
+    st.session_state.E = E
+    z2 = st.number_input('Введите число рабочих лопаток z2, шт ', value=z2)
+    st.session_state.z2 = z2
+    Bb = st.number_input('Введите размер бандажной ленты Bb, мм ', value=Bb)
+    st.session_state.Bb = Bb
+    delta = st.number_input('Введите размер бандажной ленты delta, мм ', value=delta)
+    st.session_state.delta = delta
+    m = st.number_input('Введите число лопаток в пакете m, шт ', value=m)
+    st.session_state.m = m
+    Hb = st.number_input('Качество присоединение бандажа Hb ', value=Hb)
+    st.session_state.Hb = Hb
