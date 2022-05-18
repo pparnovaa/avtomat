@@ -104,7 +104,7 @@ y_axis_label='Поправочный коэффициент')
 
 fig.line(x_list, y_list , line_width=3)
 st.bokeh_chart(fig, use_container_width=True)
-ksi=0.000005*lyambda**4-(0.0003*lyambda**3)+0.0037*lyambda**2+0.0203*lyambda+0.4318
+ksi=0.00000002*(lyambda/10)**6+0.0000003*(lyambda/10)**5-0.00003*(lyambda/10)**4-(0.0007*(lyambda/10)**3)+0.0062*(lyambda/10)**2+0.0451*(lyambda/10)+0.7891
 st.write(""" ksi = """ + str(ksi))
 st.write(""" # """)
 st.write("# Определение собственной частоты колебаний пакета лопаток в статических условиях")
