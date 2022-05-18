@@ -117,7 +117,7 @@ st.write(""" # """)
 Eb=E
 dp= 1.046 #NE UVERENA
 Jb=Bb/12*delta**3
-tb=(math.pi*dp)/z2
+tb=(M.pi*dp)/z2
 betta=90-bettau
 bettarad=betta*math.pi/180
 kb=12*(m-1)*Hb*Eb**Jb*M.cos(betta)*M.cos(betta)
