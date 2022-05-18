@@ -114,4 +114,14 @@ st.write(""" Действительная частота колебаний f3: 
 f3=1*(m3/l2**2)*(E*Jx/(ro*Fx))**0.5
 st.write(""" f3 = """ + str(f3) + """ Гц """)
 st.write(""" # """)
+Eb=E
+dp= 1.046 #NE UVERENA
+Jb=Bb/12*delta**3
+tb=(math.pi*dp)/z2
+betta=90-bettau
+bettarad=betta*math.pi/180
+kb=12*(m-1)*Hb*Eb**Jb*M.cos(betta)*M.cos(betta)
+st.write(""" # """)
+st.write(""" Коэффициент жесткости бандажа: """)
+st.write(""" kb = """ + str(kb))
 
