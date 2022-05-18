@@ -104,7 +104,7 @@ plt.xlabel("lyambda")
 plt.ylabel("ksi")
 plt.grid()
 st.pyplot(x_list_y_list)
-matplotlib.pyplot.autoscale(enable=True, axis=’both’, tight=None)
+plt.autoscale(enable=True, axis=’both’, tight=None)
 plt.show()
 ksi = st.number_input('Введите ksi, ', value=ksi)
 st.session_state.ksi = ksi
