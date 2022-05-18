@@ -101,14 +101,19 @@ x_list_y_list = plt.figure()
 plt.title("Зависимость ksi для первого тона колебаний от гибкости лопатки ")
 plt.xlabel("lyambda")
 plt.ylabel("ksi")
+
 plt.grid()
 st.pyplot(x_list_y_list)
+fig = figure(title='SS', plot_height=300, plot_width=300, x_range=(0, 4), y_range=(0, 4))
+fig.line(x_list,y_list)
+st.show()
 plt.xlim([25, 50])
 # !!! Нарисуем одномерный график с использованием стиля
 plt.plot (x_list, y_list)
 # !!! На графике будет показан только участок от -10 до 30 по оси X
 plt.xlim (-10, 30)
 # !!! Покажем окно с нарисованным графиком
+
 plt.show()
 ksi = st.number_input('Введите ksi, ', value=ksi)
 st.session_state.ksi = ksi
