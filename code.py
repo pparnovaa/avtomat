@@ -116,6 +116,7 @@ plt.grid()
 pyplot.xlim([0, 200])
 pyplot.xlim([0, 1])
 st.pyplot(x_list_y_list)
+plt.autoscale()
 plt.show()
 ksi = st.number_input('Введите ksi, ', value=ksi)
 st.session_state.ksi = ksi
