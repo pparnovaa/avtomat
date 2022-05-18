@@ -104,8 +104,8 @@ plt.grid()
 st.pyplot(x_list_y_list)
 fig = figure(
 title='Зависимость ksi для первого тона колебаний от гибкости лопатки',
-x_axis_label='x',
-y_axis_label='y')
+x_axis_label='Гибкость лопатки',
+y_axis_label='Поправочный коэффициент')
 
 fig.line(x_list, y_list, legend_label='Trend', line_width=2)
 st.bokeh_chart(fig, use_container_width=True)
