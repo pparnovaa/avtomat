@@ -106,7 +106,6 @@ plt.grid()
 st.pyplot(x_list_y_list)
 fig = figure(title='SS', plot_height=300, plot_width=300, x_range=(0, 4), y_range=(0, 4))
 fig.line(x_list,y_list)
-st.show()
 plt.xlim([25, 50])
 # !!! Нарисуем одномерный график с использованием стиля
 plt.plot (x_list, y_list)
