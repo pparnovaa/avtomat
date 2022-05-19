@@ -33,7 +33,7 @@ m3=9.82
 dp=1.046
 n=50
 st.write(" *Изменить исходные данные:* ")
-r1 = st.slider('Укажите максимальную границу r1', min_value=1.265, max_value=2*d1, step=0.05)
+r1 = st.slider('Укажите максимальную границу r1', min_value=1.265, max_value=2, step=0.05)
 st.session_state.r1 = r1
 
 dsr = st.number_input('Введите средний диаметр последней ступени dsr, м', value=dsr)
