@@ -204,7 +204,7 @@ fig.line(coord_x6, coord_y6, line_width=3, line_color="blue")
 #fig.line(coord_x5, coord_y5, line_width=3, line_color="orange"))
 fig.line(coord_x4, coord_y4, line_width=3,line_color="orange")
 fig.line(coord_x2, coord_y2, line_width=3, line_color="purple")
-fig.line(coord_x1, coord_y1, line_width=3, line_color="green")
+#fig.line(coord_x1, coord_y1, line_width=3, line_color="green")
 fig.line(coord_x3, coord_y3, line_width=3, line_color="pink")
 st.bokeh_chart(fig, use_container_width=True)
 # Сделать график!!!!!!!!!!!!! 
