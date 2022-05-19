@@ -199,7 +199,7 @@ x_axis_label='Коэффициент жесткости бандажа ',
 y_axis_label='Множитель fi')
 
 fig.line(coord_x15, coord_y15, line_width=3)
-fig.line(coord_x14, coord_y14, line_width=3,line_color="red")
+#fig.line(coord_x14, coord_y14, line_width=3,line_color="red")
 fig.line(coord_x13, coord_y13, line_width=3,line_color="blue")
 fig.line(coord_x12, coord_y12, line_width=3,line_color="orange")
 fig.line(coord_x11, coord_y11, line_width=3,line_color="purple")
