@@ -33,12 +33,9 @@ m3=9.82
 dp=1.046
 n=50
 st.write(" *Изменить исходные данные:* ")
-r1 = st.slider('Укажите максимальную границу r1', min_value=1.265, max_value=2, step=0.05)
-st.session_state.r1 = r1
-
 dsr = st.number_input('Введите средний диаметр последней ступени dsr, м', value=dsr)
 st.session_state.dsr =dsr
-l2 = st.number_input('Введите длину рабочей лопатка l2, м', value=l2)
+l2 = st.number_input('Введите длину рабочей лопатки l2, м', value=l2)
 st.session_state.l2 = l2
 Fx = st.number_input('Введите площадь сечения профиля Fx, м2', value=Fx)
 st.session_state.Fx = Fx
