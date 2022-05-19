@@ -166,6 +166,11 @@ coord_y11=[6.227,	6.247,	6.268	,6.299,	6.34	,6.371	,6.423	,6.474	,6.515,	6.588	,
            7.316]
 coord_x12=[0.014,	0.169,	0.394,	0.711,	1.037,	1.381,	1.836,	2.146,	2.493]
 coord_y12=[0.581,	0.645,	0.726,	0.839,	0.919,	0.984,	1.143,	1.238	,1.333]
+coord_x13=[0.014,	0.254,	0.634,	1.045,	1.552,	1.978,	2.271,	2.5
+]
+coord_y13=[0.758,	0.839,	0.952,	1.143,	1.429,	1.619,	1.762,	1.857
+]
+coord_x13_coord_y13=plt.figure()
 coord_x12_coord_y12=plt.figure()
 coord_x11_coord_y11=plt.figure()
 coord_x10_coord_y10=plt.figure()
@@ -182,6 +187,7 @@ fig = figure(
 title='Зависимость множителя fi от коэффициента жесткости бандажа и его относительной массы',
 x_axis_label='Коэффициент жесткости бандажа ',
 y_axis_label='Множитель fi')
+fig.line(coord_x13, coord_y13, line_width=3)
 fig.line(coord_x12, coord_y12, line_width=3)
 fig.line(coord_x11, coord_y11, line_width=3)
 fig.line(coord_x10, coord_y10, line_width=3)
