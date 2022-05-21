@@ -108,7 +108,7 @@ fig.line(x_list, y_list , line_width=3)
 st.bokeh_chart(fig, use_container_width=True)
 ksi = -2e-8*(lyambda/10)**6 + 2e-6*(lyambda/10)**5 - 0.0001*(lyambda/10)**4 + 0.0025*(lyambda/10)**3) - 0.031*(lyambda/10)**2 + 0.2082*(lyambda/10) + 0.079
 
-#ksi=0.00000002*(lyambda/10)**6+0.0000003*(lyambda/10)**5-0.00003*(lyambda/10)**4-(0.0007*(lyambda/10)**3)+0.0062*(lyambda/10)**2+0.0451*(lyambda/10)+0.7891
+#ksi=0.00000002*(lyambda/10)**6+0.0000003*(lyambda/10)**5-0.00003*(lyambda/10)**4-(0.0007*(lyambda/10)**3))+0.0062*(lyambda/10)**2+0.0451*(lyambda/10)+0.7891
 st.write(""" ksi = """ + str(ksi))
 #st.write(""" ksi = """ + str(ksi))
 st.write(""" # """)
